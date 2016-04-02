@@ -1,1 +1,1 @@
-"# PHPStart" 
+# PHPStart
