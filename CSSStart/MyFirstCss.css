@@ -1,3 +1,29 @@
-.red{
-    color: red;
+.aCss{
+    font-family: Arial,sans-serif;
+    font-size: 20px;
+    color:red;
+    border:2px dotted blue;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-left: 3px;
+    list-style: none;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+}
+a{
+    display: block;
+    /*box-sizing: border-box;*/
+    /*height: 200px;*/
+    /*width: 200px;*/
+}
+.check{
+    font-family: Arial,sans-serif;
+    font-size: 20px;
+    color:red;
+    border:2px dotted blue;
+    width: 200px;
+    height: 200px;
+    float:left;
 }
