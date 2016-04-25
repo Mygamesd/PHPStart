@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="JavaScript/FirstJS.js"></script>
+    <link href="CSS/Java.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<!--window.open 和obj.innerHTML close-->
+    <from>
+        <input type="button" onClick="Wopen()" value="点击我，打开新窗口!" />
+        <input type="button" onClick="Wcolse()" value="点击我，关闭新窗口!" />
+        <input type="button" value="新窗口打开网站" onclick="openWindow()" />
+
+        <p id = "Na">JavaScript</p>
+        <input type="button" value="输出ID" onclick="GetID()" />
+        <input type="button" value="修改Na的内容" onclick="Changvalue()" />
+    </from>
+
+    <div><!--/*搜索 obj.className obj.innerHTML 的使用*/-->
+        请输入关键内容:<br>
+        <input type="text" id="search_str" placeholder="请输入已有内容">
+        <input type="button" onClick="search()" value="搜索">
+    </div>
+    <div class="serbody">
+        <p>你好</p>
+        <p>他好</p>
+        <p>我好</p>
+        <p>大家好</p>
+    </div>
+
+    <div><!--display的使用-->
+        <h1>JavaScript</h1>
+        <p id="displayID">做为一个Web开发师来说，如果你想提供漂亮的网页、令用户满意的上网体验，JavaScript是必不可少的工具。</p>
+        <form>
+            <input type="button" onclick="hidetext()" value="隐藏内容" />
+            <input type="button" onclick="showtext()" value="显示内容" />
+        </form>
+    </div>
+
+    <!--综合使用-->
+    <div>
+        <h2 id="con">JavaScript课程</H2>
+        <div id="txt">
+            <h5>JavaScript为网页添加动态效果并实现与用户交互的功能。</h5>
+            <p>1. JavaScript入门篇，让不懂JS的你，快速了解JS。</p>
+            <p>2. JavaScript进阶篇，让你掌握JS的基础语法、函数、数组、事件、内置对象、BOM浏览器、DOM操作。</p>
+            <p>3. 学完以上两门基础课后，在深入学习JavaScript的变量作用域、事件、对象、运动、cookie、正则表达式、ajax等课程。</p>
+        </div>
+        <form>
+            <!--当点击相应按钮，执行相应操作，为按钮添加相应事件-->
+            <input type="button" value="改变颜色" onclick="changecolor()">
+            <input type="button" value="改变宽高" onclick="changeWandH()">
+            <input type="button" value="隐藏内容" onclick="hitText()">
+            <input type="button" value="显示内容" onclick="showText()">
+            <input type="button" value="取消设置" onclick="Reflush()">
+        </form>
+    </div>
+
+    <div>
+        <input type="button" value="点击输入星期几" onclick="SwitchFunc()"/>
+    </div>
+
+    <div id= "myContorl">
+        <form>
+            <input type="button" value="筛选" onclick="infosFunc()"/>
+        </form>
+    </div>
+
+    <div id = "MaxNum">
+        <form>
+            <input type="button" value="判断数字大小" onclick="witchMax()">
+        </form>
+    </div>
+
+    <div id="Ontouch">
+        <form>
+            个人简介：<br>
+            <textarea name="summary" cols="60" rows="5" onblur="Onblur()" onfocus="Onfocus()" onselect="message()">
+                请写入个人简介，不少于200字！
+            </textarea>
+        </form>
+    </div>
+
+    <div id="Event">
+        <form>
+            <input type='text' id='txt1' />
+            <select id='select'>
+                <option value='+'>+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input type='text' id='txt2' /><br/>
+            <input type='button' value=' = ' onclick="count()"/><br/> <!--通过 = 按钮来调用创建的函数，得到结果-->
+            <input type='text' id='fruit' />
+        </form>
+    </div>
+
+    <div id= "timeId">
+        <input type="button" onclick="checktime()" value="点击查询时间">
+    </div>
+
+    <div id = 'stringId'>
+        <input type="button" onclick="forString()" value="点击输入字符串">
+    </div>
+
+    <div id = 'MathId'>
+        <input id="theBotton" type="button" onclick="forMath()" value="点击输入" />
+    </div>
+
+    <div class = 'ArrayId'>
+        <input class="theBottonofArray" type="button" onclick="ForArray()" value="点击输出数组" />
+    </div>
+
+    <div class = 'ArrayId'>
+        <input class="theBottonofArray" type="button" onclick="TheSevenPrictuce()" value="第七章练习" />
+    </div>
+
+
+    <div class = "ArrayId">
+        <form>
+        <input type="text" id="clock" size="50"  />
+        <br/>
+        <input class="theBottonofArray" type="button" onclick="timeclock()" value="开始显示时间" />
+        <input class="theBottonofArray" type="button" onclick="stoptime()" value="停止显示时间" />
+        <input class="theBottonofArray" type="button" onclick="setTime()" value="延迟显示时间" />
+        <input class="theBottonofArray" type="button" onclick="stopSetTime()" value="停止延迟时间" />
+        </form>
+    </div>
+
+    <div class = "ArrayId">
+        点击下面的锚点链接，添加历史列表项:
+
+        <br />
+        <a href="#target1">第一个锚点</a>
+        <a name="target1"></a>
+        <!--第一个是进行锚点的意思，即点击a链接的时候定位到id为target的地方。-->
+        <!--第二个就是单纯的设置a链接的name属性-->
+        <br />
+        <a href="#target2">第二个锚点</a>
+        <a name="target2"></a>
+        <br />
+        <form>
+            <input type="text" id="his" />
+            <br/>
+            <input class="theBottonofArray" type="button" onclick="theHistory()" value="在文本框中输出URL长度" />
+            <input class="theBottonofArray" type="button" onclick="GoBack()" value="返回前一个页面"  />
+            <input class="theBottonofArray" type="button"   onclick="GoForward()" value="返回下一个页面"/>
+        </form>
+    </div>
+
+    <div class="TheClass">
+        <form>
+            <textarea id="Locat" ></textarea>
+            <br/>
+            <input class="theBottonofArray" type="button" onclick="TheURL()" value = "输出URL相关" />
+            <input class="theBottonofArray" type="button" onclick="TheNavi()" value = "输出浏览器相关" />
+            <input class="theBottonofArray" type="button" onclick="TheScreen()" value = "输出屏幕宽高" />
+        </form>
+    </div>
+
+    <div class="TheClass">
+        <form>
+            <input class="theBottonofArray" type="button" onclick="eightPrictice()" value = "点击触发页面" />
+        </form>
+        <p>
+            <b id="second">5</b>秒后回到主页&nbsp;<a href="javascript:GoBack();">返回</a>
+        </p>
+    </div>
+
+    <div class = "TheClass">
+        <form name = "Input">
+            <table align="center" width="500px" height="50%" border="1">
+                <tr>
+                    <td align="center" width="100px">
+                        学号:
+                    </td>
+                    <td align="center" width="300px">
+                        <input type="text" id=userid name="user" onblur="validate();">
+                        <div id = usermsg></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" width="100px">
+                        姓名:
+                    </td>
+                    <td align="center">
+                        <input type="text" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <!--由table默认样式规范所决定，-->
+                    <!--当指定的宽度小于内容宽度时，table及tr,td的宽度由其实际内容决定。-->
+                    <!--当指定的宽度大于内容宽度时，若对同一列td指定了% 与px,采用td的%值最大值作该列宽。-->
+                    <!--此条若与第一条违背则采用第一条。-->
+                    <!--table本身宽度大于tr内容总宽时，无论td宽度大于table宽度，都不会改变table宽度。-->
+                    <td align="center" width="%45">
+                        性别:
+                    </td>
+                    <td align="center">
+                        <input type="radio" name="sex" value="男">
+                        男
+                        <input type="radio" name="sex" value="女">
+                        女
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" width="30%">
+                        年龄:
+                    </td>
+                    <td align="center" width="300px">
+                        <input type="text" name="age">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" width="100px">
+                        地址:
+                    </td>
+                    <td align="center" width="300px">
+                        <input type="text" name="addr">
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+        <h1 id="myHead" onclick="getValue()">
+            看看三种获取节点的方法?
+        </h1>
+        <p>
+            点击标题弹出它的值。
+        </p>
+        <input class="theBottonofArray" type="button" onclick="getElements()"
+               value="查询name的节点有几个?" />
+        <input class="theBottonofArray" type="button" onclick="getTagElements()"
+               value="查询标签名的节点有几个?" />
+    </div>
+
+    <!--checkBox-->
+    <div class="TheClass">
+        <form>
+            请选择你爱好:
+            <br />
+            <input type="checkbox" name="hobby" id="hobby1">  音乐
+            <input type="checkbox" name="hobby" id="hobby2">  登山
+            <input type="checkbox" name="hobby" id="hobby3">  游泳
+            <input type="checkbox" name="hobby" id="hobby4">  阅读
+            <input type="checkbox" name="hobby" id="hobby5">  打球
+            <input type="checkbox" name="hobby" id="hobby6">  跑步
+            <br />
+            <input type="button" value = "全选" onclick = "checkall()" />
+            <input type="button" value = "全不选" onclick = "clearall()" />
+            <p>请输入您要选择爱好的序号，序号为1-6:</p>
+            <input id="wb" name="wb" type="text" >
+            <input name="ok" type="button" value="确定" onclick = "checkone()" />
+        </form>
+    </div>
+
+    <div class="TheClass" id = 'TheNodeOfdiv'><p id="intro" onclick="GetAttritube()">点击课程列表</p><!--空白节点-->
+        <p onclick="TheNode()">点击输出属性</p><!--空白节点-->
+        <p onclick="AccessNode()">点击访问ul的子结点</p><!--空白节点-->
+        <ul id = 'ulId'><!--空白节点--><!--对ul来说共11个子节点(ul之下一直到/ul之前的所以节点，包括空白节点,注释也算作一个节点)-->
+            <li title="JS">JavaScript</li><!--空白节点-->
+            <li  id = 'liId' title="JQ">JQuery</li><!--空白节点-->
+            <li >HTML/CSS</li><!--空白节点-->
+            <li title="JAVA">JAVA</li><!--空白节点-->
+            <li >PHP</li><!--空白节点-->
+        </ul><!--空白节点-->
+        <form><!--空白节点-->
+            <input class="theBotton" type="button" onclick="get_firstChild()" value="点击查询ul的首节点" /><!--空白-->
+            <input class="theBotton" type="button" onclick="get_lastChild()" value="点击查询ul的尾节点" /><!--空白-->
+            <input class="theBotton" type="button" onclick="get_parentNode()" value="点击查询ul的父节点" /><!--空白-->
+            <input class="theBotton" type="button" onclick="get_previousSibling()" value="点击查询ul的上节点" /><!--空白-->
+            <input class="theBotton" type="button" onclick="get_nextSibling()" value="点击查询ul的下节点" /><!--空白-->
+            <input class="theBotton" type="button" onclick="set_appendChild()" value="点击添加ul的下节点" /><!--空白-->
+            <input class="theBotton" type="button" onclick="set_insertBefore()" value="点击指定节点前添加节点" /><!--空白-->
+            <input class="theBotton" type="button" onclick="use_removeChild()" value="点击删除指定的子节点" /><!--空白-->
+            <input class="theBotton" type="button" onclick="use_replaceChild()" value="点击修改指定的子节点" /><!--空白-->
+        </form><!--空白节点-->
+    </div>
+</body>
+</html>

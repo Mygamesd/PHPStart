@@ -1,0 +1,113 @@
+.serbody{
+    width: 300px;
+    height: 200px;
+    background-color: #ddd;
+}
+p{
+    font-size: 20px;
+    line-height: 25px;
+    height: 25px;
+}
+.p_serchar{ /*定义被搜索到时的显示样式*/
+    background-color: blue;
+    color: #fff;
+}
+#txt{
+    height:400px;
+    width:600px;
+    border:#333 solid 1px;
+    padding:5px;
+}
+
+#myContorl{
+    border: #f00 dotted 2px;
+}
+
+#MaxNum{
+    border: #00f dotted 2px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#Ontouch{
+    border: grey solid 2px ;
+    width: 500px;
+    margin: 0 auto;
+    padding:auto;
+}
+
+#Event{
+    border: grey solid 2px ;
+    width: 500px;
+    margin: 0 auto;
+    padding:auto;
+    text-align: center;
+}
+
+#timeId{
+    border: grey solid 2px ;
+    width: 500px;
+    margin: 0 auto;
+    padding:auto;
+    text-align: center;
+}
+
+#stringId{
+    border: grey solid 2px ;
+    width: 500px;
+    margin: 0 auto;
+    padding:auto;
+    text-align: center;
+}
+
+#MathId{
+    border: grey solid 2px ;
+    width: 500px;
+    margin: 0 auto;
+    padding:auto;
+    text-align: center;
+}
+
+#theBotton{
+    witdh:120px;
+    height: 40px;
+    border: #ff0 dotted 3px ;
+}
+
+.ArrayId{
+    border: grey solid 2px ;
+    width: 500px;
+    margin: 0 auto;
+    padding:auto;
+    text-align: center;
+}
+
+.theBottonofArray{
+    witdh:120px;
+    height: 40px;
+    border: #ff0 dotted 3px ;
+}
+
+.theBotton{
+    witdh:120px;
+    height: 40px;
+    border: #ff0 dotted 3px ;
+}
+
+.TheClass{
+    border: grey solid 2px ;
+    width: 800px;
+    margin: 0 auto;
+    padding:auto;
+    text-align: center;
+}
+
+#Locat{
+    height: 300px;
+    width: 600px;
+}
+
+ul{
+    list-style-type: none;
+}
