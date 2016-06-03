@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StartJQuery</title>
+    <script language="JavaScript" type="text/javascript" src="JQuery/jquery-2.2.4.js"></script>
+    <script language="javascript" type="text/javascript" src="MyJQuery/MyJQuery.js"></script>
+    <link href="CSS/StartJQ.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="TheClass">
+    <ol id="olId">
+        <li>葡萄</li>
+        <li>香蕉</li>
+        <li>橘子</li>
+        <li>西瓜</li>
+        <li>苹果</li>
+    </ol>
+    <form>
+    <button type="button" class="TheBotton" onclick="use_selector_eq()">点击改变颜色</button>
+    </form>
+</div>
+
+<div class="TheClass">
+    <ol id="sec_olId">
+        <li><p>我是P先生</p></li>
+        <li><label>L妹纸就是我</label></li>
+        <li><p>我也是P先生</p></li>
+        <li><label title="Myselector">我也是L妹纸哦</label></li>
+        <li><p>P先生就是我哦</p></li>
+    </ol>
+    <form>
+        <button type="button" class="TheBotton" onclick="use_selector_has()">点击改变含有p的li的颜色</button>
+        <button type="button" class="TheBotton" onclick="use_selector_attribute()">改变属性选择的颜色</button>
+    </form>
+</div>
+
+
+</body>
+</html>

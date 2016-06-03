@@ -1,0 +1,17 @@
+.TheClass{
+    border: grey solid 2px ;
+    width: 800px;
+    margin: 0 auto;
+    padding:auto;
+    text-align: center;
+}
+
+.TheBotton{
+    width:120px;
+    height: 40px;
+    border: #ff0 dotted 3px ;
+}
+
+li{
+    list-style: none;
+}
