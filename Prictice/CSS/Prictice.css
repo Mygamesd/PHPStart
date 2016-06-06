@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    font-family: Microsoft YaHei;
+    font-size: 14px;
+}
+
+#header{
+    background-color: #f56961;
+    width: 100%;
+}
+
+.hearderP{
+    color: #ffffff;
+    font-size: 36px;
+    padding: 18px 45px;
+    box-sizing: border-box;
+}
+
+div{
+    background-color: white;
+}
+
+#warp{
+    /*border: 1px solid black;*/
+    /*width: 1300px;*/
+    /*overflow:hidden;*/
+    background-color: #f4f4f4;
+    margin: 50px auto 0 auto;
+}
+
+.main{
+    width: 918px;
+    background-color: #f4f4f4;
+}
+
+.TheTitle{
+    width: 230px;
+}
+.TheText{
+    width: 230px;
+    color: #c7c7c7;
+}
+
+#leftWarp{
+    width: 45%;
+    /*border: 1px solid red;*/
+    display: inline-block;
+    vertical-align: top;
+    background-color: #f4f4f4;
+    /*顶部对齐*/
+}
+
+#rightWarp{
+    width: 50%;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.TheRight{
+    padding: 27px 22px 22px 22px;
+    border-radius: 10px;
+}
+
+#top{
+    width: 360px;
+    background: url("Img/icon_6.gif") 16px 28px no-repeat white;
+    border-radius: 3px;
+    padding: 28px 50px 30px 80px;
+    box-sizing: border-box;
+    margin: 0 auto 10px auto;
+
+}
+
+#down{
+    width: 360px;
+    background: url("Img/icon_6.gif") 16px 28px no-repeat white;
+    border-radius: 3px;
+    padding: 28px 54px 30px 80px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.sevenTitle{
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.moneyMonth{
+    float: right;
+    font-size: 22px;
+    font-weight: bold;
+    color: #8dd791;
+}
+
+.TheLine{
+    clear: both;
+    border: 1px solid #ededed;
+}
+
+.TheImg{
+    display: inline-block;
+    width: 24px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.TheUl{
+    padding: 22px 22px;
+}
+
+#Img_1{
+    background: url("Img/soft_r_1.gif") 0 5px no-repeat;
+    margin-right: 18px;
+}
+#Img_2{
+    background: url("Img/soft_r_1.gif") center no-repeat;
+}
+#Img_3{
+    background: url("Img/soft_r_1.gif") center no-repeat;
+}
+#Img_4{
+    background: url("Img/soft_r_1.gif") center no-repeat;
+}
+#Img_5{
+    background: url("Img/soft_r_1.gif") center no-repeat;
+}
+#Img_1{
+    background: url("Img/soft_r_1.gif") center no-repeat;
+ }
+#Img_6{
+    background: url("Img/soft_r_1.gif") center no-repeat;
+}
+
+.TheInput{
+    display: inline-block;
+    padding: 10px;
+    width: 260px;
+    box-shadow: none;
+    margin-top: 10px;
+    margin-bottom: 22px;
+    color: #c8c8c8;
+    border: 1px solid #dddddd;
+}
+
+.TheCode{
+    /*display: inline-block;*/
+    padding: 10px;
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 22px;
+    color: #c8c8c8;
+    border-color: #dddddd;
+}
+
+.bodyLeft{
+    display: inline-block;
+}
+
+.Card{
+    display: inline-block;
+    width: 70%;
+}
+
+.code{
+    display: inline-block;
+    width: 25%;
+}
+
+.TheSeclect{
+    display: inline-block;
+    width: 105px;
+    height: 38px;
+    margin-top: 10px;
+    margin-bottom: 22px;
+    color: #c8c8c8;
+}
+
+#ThePayPal{
+    background: url("Img/home.gif") 65px 20px no-repeat;
+}
+
+.Theradio{
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.TheButton{
+    width: 345px;
+    height: 40px;
+    background-color: #72ce78;
+    margin: 0 auto;
+    color: white;
+    font-size: 22px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    cursor: pointer;
+}
+
+#TheButtonDiv{
+    /*margin: auto;*/
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.clearfix:before,.clearfix:after{
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+.TheCard{
+    font-size: 14px;
+}
+
+.TheButtonP{
+    color: #a0a0a0;
+}
+
+.TheTitleForDown{
+    color: #747474;
+}
