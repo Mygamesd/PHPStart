@@ -1,0 +1,51 @@
+*{padding: 0; margin: 0; border: 0}
+
+.warp{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.div_class{
+    margin-top: 10px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.button_class{
+    padding: 10px;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+.button_show{
+    padding: 10px;
+    margin: 20px auto 0;
+    text-align: center;
+    color: darkslategray;
+    background-color: skyblue;
+}
+
+.input_class{
+    border: 1px solid grey;
+}
+
+p{
+    margin-top: 10px;
+}
+
+h1{
+    margin-top: 10px;
+}
+
+.show_text{
+    border: 1px solid skyblue;
+    margin-top: 10px;
+    height: 300px;
+    width: 600px;
+}
+
+.p_show{
+    color: red;
+    font-weight: bold;
+}
