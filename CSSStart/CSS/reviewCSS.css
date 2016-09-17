@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-family: "微软雅黑";
+    border: 0;
+}
+
+body{
+    background: url("img/body.png") 10px 10px fixed;
+    /*长度值解释的是元素内边距区左上角的偏移。偏移点是图像的左上角。*/
+}
+
+.div_class{
+    width: 700px;
+    margin: 10px auto;
+    /*height: 300px;*/
+}
+
+.warp{
+    width: 1200px;
+    margin: 0 auto;
+    /*background-color 不能继承，其默认值是 transparent。*/
+    /*transparent 有“透明”之意。也就是说，如果一个元素没有指定背景色，那么背景就是透明的，这样其祖先元素的背景才能可见。*/
+    /*background-color*/
+
+    background: url("img/wrap.gif") center repeat-y;
+    /*换句话说，百分数值同时应用于元素和图像。也就是说，图像中描述为 50% 50% 的点（中心点）与元素中描述为 50% 50% 的点（中心点）对齐。*/
+    /*如果图像位于 0% 0%，其左上角将放在元素内边距区的左上角。如果图像位置是 100% 100%，会使图像的右下角放在右边距的右下角。*/
+
+}
+
+/*以下作为测试选择器的示例代码*/
+
+/*id选择器*/
+/*id选择器的子代选择器，只会对子元素造成影响，不会对其他的后代造成影响*/
+/*此处选择了id为 idSelect_div 下p的子元素 strong，所以不会对同样的在p下，且在span下的strong造成影响*/
+#idSelect_div p > strong {
+    color: grey;
+}
+
+/*id的后代选择器（descendant selector）又称为包含选择器。*/
+#idSelect_div h2 {
+    color: firebrick;
+}
+
+/*id的后代选择器在后代选择器中，规则左边的选择器一端包括两个或多个用空格分隔的选择器。选择器之间的空格是一种结合符（combinator）。*/
+/*每个空格结合符可以解释为“... 在 ... 找到”、“... 作为 ... 的一部分”、“... 作为 ... 的后代”，但是要求必须从右向左读选择器。*/
+/*要知道，后代选择器会对你的选择器所选择的所有元素造出影响，无论嵌套到多深*/
+/*这里，选择的是id：idSelect_div 下的 h2 下的 strong，因此，只要是 idSelect_div 下的 h2 下的strong元素，就算再被span所嵌套*/
+/*依然会被选择*/
+#idSelect_div h2 strong {
+    color: aqua;
+}
+
+
+/*class（类选择器）*/
+/*class（类选择器）的后代选择器*/
+.div_class strong {
+    color: red;
+}
+
+/*class（类选择器）的后代选择器*/
+.div_class h2 {
+    color: red;
+}
+
+.div_class h2 strong {
+    color: blue;
+}
+
+/*属性选择器*/
+/*选择所有包含自定义属性Selecttitle属性的元素*/
+[Selecttitle] {
+    color: green;
+}
+/*为 Selecttitle="p" 的所有元素设置样式*/
+[Selecttitle = p]{
+    color: gainsboro;
+}
+/*为包含指定值的  h2 属性的所有元素设置样式*/
+[Selecttitle ~= h2]{
+    color: #266392;
+}
+
+
+/*设置表单的样式
+属性选择器在为不带有 class 或 id 的表单设置样式时特别有用：
+
+input[type="text"]
+{
+    width:150px;
+    display:block;
+    margin-bottom:10px;
+    background-color:yellow;
+    font-family: Verdana, Arial;
+}
+
+input[type="button"]
+{
+    width:120px;
+    margin-left:35px;
+    display:block;
+    font-family: Verdana, Arial;
+}*/
+
+/*属性值参考
+选择器	描述
+[attribute]	用于选取带有指定属性的元素。
+[attribute=value]	用于选取带有指定属性和值的元素。
+[attribute~=value]	用于选取属性值中包含指定词汇的元素。
+[attribute|=value]	用于选取带有以指定值开头的属性值的元素，该值必须是整个单词。
+[attribute^=value]	匹配属性值以指定值开头的每个元素。
+[attribute$=value]	匹配属性值以指定值结尾的每个元素。
+[attribute*=value]	匹配属性值中包含指定值的每个元素。
+*/
