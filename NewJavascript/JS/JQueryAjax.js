@@ -26,12 +26,14 @@ $(document).ready(function () {
             type: "POST",
             url: "http://legeron.veryhot.tokyo/NewJavascript/Php/JQserver.php",
             dataType: "json",
+            // JQuery 传递数据时使用data，会被解析成json格式的文件
             data: {
                 name: $('#JQ_staffName').val(),
                 number: $('#JQ_staffNumber').val(),
                 sex: $('#JQ_staffSex').val(),
                 job: $('#JQ_staffJob').val()
             },
+            // 成功后执行success，data是后端返回的值
             success: function (data) {
                 if (data.success) {
                     $("#JQ_createResult").html(data.msg);
@@ -39,6 +41,7 @@ $(document).ready(function () {
                     $("#JQ_createResult").html("出现错误：" + data.msg);
                 }
             },
+            //
             error: function(jqXHR){
                 alert("发生错误：" + jqXHR.status);
             }

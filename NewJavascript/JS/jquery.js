@@ -520,6 +520,8 @@ $(function () {
         $('#favorite').val(thisValue);
     });
 
+
+
     // 完整的 key press 过程分为两个部分：1. 按键被按下；2. 按键被松开。
     // 当按钮被按下时，发生 keydown 事件。
     // keydown() 方法触发 keydown 事件，或规定当发生 keydown 事件时运行的函数。
