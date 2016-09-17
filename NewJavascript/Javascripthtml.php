@@ -81,7 +81,7 @@
         <p id = 'show_time' onclick="startTime()">点击显示时间</p>
         <p id = 'show_window' onclick="show_window()">点击显示窗口大小</p>
         <h1 id = 'show_screen'>显示功能</h1>
-        <textarea class="show_text" id="show_text"></textarea>
+        <textarea class="show_text" id="show_text"></textarea> <!--多行文本框-->
         <button class="button_class" type="button" onclick="show_screen()">show_screen</button>
         <button class="button_class" type="button" onclick="TheURL()">TheURL</button>
         <button class="button_class" type="button" onclick="TheNavi()">TheNavi</button>

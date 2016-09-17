@@ -94,7 +94,7 @@ function new_func_return() {
             return;
         }
         else{
-            return num1 + num2;
+            return num1 / num2;
         }
     }
     var sum = sum_func(num1,num2);
@@ -315,6 +315,8 @@ function startTime()
     s=checkTime(s);
     document.getElementById('show_time').innerHTML=h+":"+m+":"+s;
     var t = setTimeout('startTime()',500);
+    // clearTimeout(t)可以停止由setTimeout发起的计时事件
+    // t 为setTimeout返回的一个对象
 }
 
 function checkTime(i)
@@ -411,14 +413,19 @@ function TheNavi() {
 }
 
 function set_time() {
-    var TheComfirm = confirm('是否要打开新的网页');
-    if(TheComfirm){
+    var TheConfirm = confirm('是否要打开新的网页');
+    if(TheConfirm){
         var sec = document.getElementById('sec');
         var i = parseInt(prompt('请问要在多少秒后打开网页','5'));
+        // setInterval() 方法可按照指定的周期（以毫秒计）来调用函数或计算表达式。
+        // setInterval 是Html DOM 方法
+        
         var timer = setInterval(function () {
             i--;
             sec.innerHTML = i;
             if(i == 0){
+                // setInterval() 方法会不停地调用函数，
+                // 直到 clearInterval() 被调用或窗口被关闭。由 setInterval() 返回的 ID 值可用作 clearInterval() 方法的参数。
                 clearInterval(timer);
                 location.href = 'http://www.bilibili.com/';
             }

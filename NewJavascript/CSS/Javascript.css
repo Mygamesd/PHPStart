@@ -2,7 +2,7 @@
 
 .warp{
     width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     text-align: center;
 }
 
@@ -48,4 +48,34 @@ h1{
 .p_show{
     color: red;
     font-weight: bold;
+}
+
+.div_css{
+    background-color: aqua;
+    width: 200px;
+    height: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.div_aniCss{
+    width: 80px;
+    height: 80px;
+    background-color: darkslategray;
+    position: absolute;
+}
+
+.ancestors *
+{
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+}
+
+.ancestors{
+    margin: 15px auto;
+    width: 500px;
 }
