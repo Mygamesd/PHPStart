@@ -16,6 +16,11 @@
                 onmouseover="button_show(this)" onmouseout="button_out(this)">
             输出排序后数组
         </button>
+
+        <button id="QuickSort2" class="button_class" type="button"
+                onmouseover="button_show(this)" onmouseout="button_out(this)">
+            输出排序后数组2
+        </button>
     </div>
 </body>
 </html>
