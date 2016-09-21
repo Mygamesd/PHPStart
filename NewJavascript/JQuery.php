@@ -5,7 +5,7 @@
     <title>JQuery</title>
     <script src="JS/jquery-2.2.4.min.js"></script>
     <script src="JS/jquery.js"></script>
-    <script src="JS/AJAX.js"></script>
+<!--    <script src="JS/AJAX.js"></script>-->
     <script src="JS/javascript.js"></script>
     <link href="CSS/Javascript.css" type="text/css" rel="stylesheet">
 </head>
