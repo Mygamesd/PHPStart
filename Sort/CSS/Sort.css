@@ -1,0 +1,187 @@
+*{margin: 0; padding: 0}
+
+a{text-decoration: none}
+
+body{
+    background: url("img/bg.jpg") fixed repeat center top #f0f0f0;
+}
+
+.head{
+    width: 1000px;
+    /*height: 300px;*/
+    margin: 0 auto 10px;
+}
+
+.head_title{
+    float: left;
+    margin-top: 20px;
+    color: #e2e2e2;
+    font-family: 'Press Start 2P', 'Exo 2', cursive, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 3em;
+    line-height: 1;
+    text-shadow: #1ba1e2 1px 1px 0, #1ba1e2 -1px 1px 0, #1ba1e2 1px -1px 0, #1ba1e2 -1px -1px 0;
+}
+
+.ul_style{
+    list-style-type: none;
+    /*vertical-align: text-bottom;*/
+}
+
+.head_menu{
+    float: right;
+}
+
+.ul_menu li{
+    float: left;
+    display: inline-block;
+    margin: 40px 10px 0 0;
+
+}
+.ul_menu li > a:link, .ul_menu li > a:visited{
+    color: black;
+    font-family: 'Press Start 2P', 'Exo 2', cursive, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1;
+}
+
+.ul_menu li > a:hover, .ul_menu li > a:active{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.warp{
+    width: 1000px;
+    margin: 40px auto 0;
+}
+
+.left_warp{
+    width: 180px;
+    display: inline-block;
+}
+
+.warp_menu{
+    float: left;
+}
+
+.warp_menu a{
+    font-family: 'Microsoft JhengHei Light', serif;
+    display: inline-block;
+    font-size: 1.3em;
+    height: 40px;
+    width: 150px;
+    line-height: 40px;
+    border: 1px solid #bebebe;
+    background-color: #f0f0f0;
+    text-align: center;
+    color: #1ba1e2;
+    cursor: pointer;
+    /*margin-top: 10px;*/
+}
+
+.warp_menu a:hover{
+    width: 170px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    font-weight: bold;
+    border:1px solid #1ba1e2;
+}
+
+.span{
+    display: none;
+}
+
+.span_show{
+    display: inline;
+}
+
+
+.right_warp{
+    background-color: #f0f0f0;
+    width: 820px;
+    float: right;
+    min-height: 800px;
+}
+
+.WR_head{
+    border-bottom: 1px solid #bebebe;
+}
+
+.WR_head h1{
+    color: #1ba1e2;
+    margin: 10px 0 10px 20px;
+}
+
+.Select_Sort{
+    color: #1ba1e2;
+    font-size: 2em;
+    margin: 10px 0 10px 20px;
+}
+
+label {
+    color: steelblue;
+    font-family: 'Microsoft JhengHei Light', serif;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.Sort_IN{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.input_class{
+    margin-right: -10px;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.input_class:focus{
+    background-color: azure;
+}
+
+.button_class{
+    vertical-align: initial;
+    margin-top: 20px;
+    font-size: 1.5em;
+    background-color: steelblue;
+    color: white;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.Button_show{
+    font-weight: 700;
+}
+
+.menu_show{
+    background-color: azure;
+    font-weight: 700;
+}
+
+
+.Sort_Out{
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #1ba1e2;
+    text-align: center;
+}
+
+
+
+
+
+.clearFix:after{
+    content: "020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearFix {
+    /* 触发 hasLayout */
+    zoom: 1;
+}
