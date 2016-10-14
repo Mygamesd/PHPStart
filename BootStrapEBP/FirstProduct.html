@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FirstProduct</title>
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap -->
+    <link href="dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <!--your CSS-->
+    <!--reset-->
+    <link href="CSS/reset.css" type="text/css" rel="stylesheet">
+    <link href="CSS/header.css" type="text/css" rel="stylesheet">
+    <link href="CSS/Product.css" type="text/css" rel="stylesheet">
+    <link href="CSS/footer.css" type="text/css" rel="stylesheet">
+
+    <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
+    <!--[if lt IE 9]>
+    <!--<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>-->
+    <!--<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>-->
+    <!--[endif]-->
+
+</head>
+<body>
+<header>
+    <nav class="nav_font">
+        <div class="navbar navbar-default navbar-fixed-top nav_background" role="navigation">
+            <div class="navbar-header">
+                　<!-- .navbar-toggle样式用于toggle收缩的内容，即nav-collapse collapse样式所在元素 -->
+                <button class="navbar-toggle" type="button" data-toggle="collapse"
+                        data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
+                <a href="#" class="navbar-brand My_navbar-brand"><img src="image/logo.jpg"/></a>
+            </div>
+
+            <!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，
+            显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">活动</a></li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle">关于我们<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu" >
+                            <li><a href="#">文化</a></li>
+                            <li><a href="#">产品</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">帮助</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav><!--nav结束-->
+
+    <div class="container search">
+        <div class="row">
+            <div class="col-xs-12 col-md-8">
+
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="请输入关键词" />
+                        <button class="btn btn-default" type="submit">搜索</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div><!--search结束-->
+
+</header><!--header结束-->
+
+<main>
+    <div class="Pro_Int">
+        <div class="container">
+            <div class="row">
+                <img class="col-xs-12 col-md-4" src="image/img1.png" />
+                <div class="col-xs-12 col-md-8">
+                    <p class="Product_title">甜酸蔬菜奶酪</p>
+                    <p class="Product_Introduction">甜酸蔬菜奶酪，使用了奶酪，番茄，蘑菇，洋葱等等蔬菜水果，通过切片，杂烩而成。美味
+                    可口，老少咸宜</p>
+                    <p class="Price">Price: $<span>30</span></p>
+                    <form role="form" action="BuyCar.html" method="Get">
+                        <div class="form-group">
+                            <p>Enter the quantity:</p>
+                            <button class="btn_left" type="button">-</button>
+                            <input class="form-control input-group-sm Num" type="text" title="" value="0">
+                            <button class="btn_right" type="button">+</button>
+                        </div>
+                        <button id="sub" class="btn bg-primary my_btn" type="submit">结算</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <ul class="col-xs-6 col-sm-6 col-md-3">
+                <li>New York Restaurant</li>
+                <li>3926 Anmoore Road</li>
+                <li>New York,NY</li>
+                <li>10014 718-74</li>
+            </ul>
+            <ul class="col-xs-6 col-sm-6 col-md-3">
+                <li>France Restaurant</li>
+                <li>68, rue  de la Couronne</li>
+                <li>75002 PARIS</li>
+                <li>02.94.23.</li>
+            </ul>
+            <ul class="col-xs-6 col-sm-6 col-md-3">
+                <li>Blog</li>
+                <li>Careers</li>
+                <li>Privacy Policy</li>
+                <li>Contact</li>
+            </ul>
+            <ul class="col-xs-6 col-sm-6 col-md-3 logo_font">
+                <li><img src="image/footer.png"/></li>
+                <li>© All Rights Reserved 2014.</li>
+                <li> Find  More at Pixelhint.com</li>
+            </ul>
+        </div>
+    </div>
+
+</footer><!--footer结束-->
+<script src="JS/jquery-2.2.4.min.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+<script src="JS/button.js"></script>
+
+<!--<script type="text/javascript">-->
+    <!--$(function(){-->
+        <!--$(".Num").integer();-->
+    <!--});-->
+<!--</script>-->
+</body>
+</html>

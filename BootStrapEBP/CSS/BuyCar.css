@@ -1,0 +1,78 @@
+
+
+body{
+    font-family: "Aleo Regular", "Myriad Pro";
+    font-size: 0.16rem;
+}
+
+h2{
+    margin-top: 0.3rem;
+    margin-bottom: 0.2rem;
+    margin-left: 0.9rem;
+}
+
+.Buy_list{
+
+}
+
+#Pro_list {
+    padding: 0.1rem 0;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    text-align: center;
+    background-image: -ms-radial-gradient(farthest-side ellipse at center,
+    rgba(246,241,232,.85) 39%,rgba(212,204,186,.5) 100%),
+    url("../image/divBG.jpg");
+    background-image: -webkit-radial-gradient(farthest-side ellipse at center,
+    rgba(246,241,232,.85) 39%,rgba(212,204,186,.5) 100%),
+    url("../image/divBG.jpg");
+    background-image: radial-gradient( farthest-side ellipse at center,
+    rgba(246,241,232,.85) 39%,rgba(212,204,186,.5) 100%),
+    url("../image/divBG.jpg");
+    background-size: cover;
+}
+
+.Product_img{
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.Product_img:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.Product_Price{
+    line-height: 2rem;
+    font-size: 0.5rem;
+    /* border: 1px solid; */
+    text-align: center;
+}
+
+.Product_Price span{
+    color: #2aabd2;
+}
+
+.total_price p{
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    font-size: 0.3rem;
+    text-align: center;
+}
+
+.total_price button{
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+
+@media screen and (max-width: 769px) {
+    h2{
+        margin-left: auto;
+    }
+    .Product_Price{
+        line-height: 1rem;
+    }
+}

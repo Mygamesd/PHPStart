@@ -1,0 +1,51 @@
+footer{
+    font-family: "Aleo Ragular","Aleo Light","Aleo Bold";
+    color: white;
+    background-color: #3b3b3b;
+    font-size: 0.14rem;
+    margin-top: 0.2rem;
+}
+
+footer ul{
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+footer ul li{
+    margin-top: 0.1rem;
+
+}
+
+footer img{
+    width: 70%;
+}
+
+.logo_font{
+    font-size: 0.12rem;
+    line-height: 0.18rem;
+}
+
+/*ipad 横屏*/
+@media screen and (max-width: 769px) {
+    footer img{
+        width: 50%;
+    }
+
+    footer ul {
+        margin-top: 0.2rem;
+    }
+}
+
+/*ipad 竖屏*/
+@media screen and (max-width: 415px) {
+    footer img{
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 321px) {
+    footer img{
+        width: 50%;
+    }
+}

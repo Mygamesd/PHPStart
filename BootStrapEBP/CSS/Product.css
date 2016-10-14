@@ -1,0 +1,55 @@
+
+
+
+.Product_title{
+    font-size: 0.5rem;
+    font-family: "Aleo Regular", "Myriad Pro";
+    border-bottom: 0.01rem solid #000000;
+}
+
+.Product_Introduction{
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.Price{
+    font-size: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.Price span{
+    color: red;
+    font-weight: bold;
+    margin-left: 0.05rem;
+}
+.btn_left, .btn_right{
+    background-color: white;
+    width: 5%;
+}
+
+
+.Num{
+    width: 10%;
+    display: inline-block;
+    text-align: center;
+}
+
+@media screen and (max-width: 415px) {
+    .Num{
+        width: 20%;
+    }
+    .my_btn{
+        width: 40%;
+    }
+    .btn_left, .btn_right{
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .Num{
+        width: 30%;
+    }
+
+}
+

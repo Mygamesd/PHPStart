@@ -1,0 +1,335 @@
+
+main{
+    font-family: "Aleo Regular", "Myriad Pro",KaiTi;
+    font-size: 0.2rem;
+}
+
+.Pro_Nav{
+    margin-bottom: 0.2rem;
+}
+
+.Product_list{
+    margin-top: 0.8rem;
+}
+
+/*.Product_list li:not(:first-child){*/
+    /*margin-top: 0.32rem;*/
+/*}*/
+
+.Product_list li{
+    cursor: pointer;
+    position: relative;
+
+}
+
+.Product_list li:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.Product_list a{
+    display: inline-block;
+    width: 100%;
+}
+
+.Product_list img{
+    display: inline-block;
+    width: 30%;
+
+}
+
+.recommend div{
+    display: inline-block;
+    margin-top: 7%;
+    text-align: center;
+}
+
+.recommend .number{
+    line-height: 1.2rem;
+    font-size: 0.3rem;
+}
+
+.Product{
+    display: block;
+}
+
+.Product_header{
+    color: #8e8e8e;
+}
+
+.Product_footer{
+    font-size: 0.12rem;
+    color: #b7b7b7;
+}
+
+.Product_header:hover{
+    color: black;
+}
+
+.list_line{
+    display: inline-block;
+    height: 0.01rem;
+    width: 50%;
+    vertical-align: text-top;
+    margin-left: 5%;
+    background:  -webkit-linear-gradient(left, #e3e1e1, #000000, #e3e1e1);
+    background:  -o-linear-gradient(right, #e3e1e1, #000000, #e3e1e1);
+    background:  -moz-linear-gradient(right, #e3e1e1, #000000, #e3e1e1);
+    background:  -ms-linear-gradient(right, #e3e1e1, #000000, #e3e1e1);
+    background:  linear-gradient(to right, #e3e1e1, #000000, #e3e1e1);
+}
+
+
+.number{
+    float: right;
+    line-height: 0.4rem;
+    color: black;
+    font-weight: bold;
+}
+
+.My_button_div{
+    margin: 0.5rem auto;
+    width: 20%;
+    text-align: center;
+}
+
+.My_button_div button{
+    width: 100%;
+}
+
+.My_button_div .btn-group{
+    width: 60%;
+}
+
+.Featured{
+    margin-top: 0.7rem;
+}
+
+.Product_p{
+    margin-left: 8%;
+    font-family: "Aleo bold";
+    font-size: 0.3rem;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+
+.Product_line{
+    display: inline-block;
+    height: 0.01rem;
+    width: 70%;
+    vertical-align: middle;
+    margin-left: 5%;
+    background:  -webkit-linear-gradient(left, #000000, #e3e1e1);
+    background:  -o-linear-gradient(right, #000000, #e3e1e1);
+    background:  -moz-linear-gradient(right, #000000, #e3e1e1);
+    background:  -ms-linear-gradient(right, #000000, #e3e1e1);
+    background:  linear-gradient(to right, #000000, #e3e1e1);
+}
+
+.Featured a{
+    cursor: pointer;
+}
+
+.Featured img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    transition: 0.3s;
+    display: block;
+    width: 100%;
+}
+
+.Featured img:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.Featured_header{
+    display: inline-block;
+    color: #555555;
+    margin-top: 0.2rem;
+    font-weight: bolder;
+}
+
+.Featured .number{
+    line-height: 0.7rem;
+    font-size: 0.2rem;
+}
+
+
+/*ipad 横屏*/
+@media screen and (max-width: 1024px){
+    .list_line{
+        width: 45%;
+    }
+
+    .My_button_div{
+        width: 26%;
+    }
+
+    .Product_p{
+        margin-left: 4%;
+    }
+}
+
+
+/*ipad 竖屏*/
+@media screen and (max-width: 769px){
+    .My_button_div{
+        width: 35%;
+    }
+    .Product_p{
+        margin-left: 3%;
+    }
+
+    .Featured{
+        margin-top: 1rem;
+    }
+
+    .right_Product_list li:first-child{
+        margin-top: 0.32rem;
+    }
+
+    .left_Product_list li:first-child{
+        margin-top: 0;
+    }
+
+    .Product_line{
+        width: 70%;
+    }
+}
+
+/*iphone6 plus 横屏*/
+@media screen and (max-width: 737px) {
+    .My_button_div{
+        width: 36%;
+    }
+
+    .Product_list li{
+        border-bottom: 1px solid #000000;
+    }
+
+}
+
+/*iphone6 横屏*/
+@media screen and (max-width: 668px){
+    .list_line{
+        width: 60%;
+        margin-left: 0;
+    }
+    .Product_list{
+        margin-top: 0.5rem;
+    }
+
+    .My_button_div{
+        width: 40%;
+    }
+
+    .Featured_header{
+        margin-top: 0.1rem;
+    }
+    .Featured .number{
+        line-height: 0.5rem;
+    }
+}
+
+/*iphone5 横屏*/
+@media screen and (max-width: 569px){
+    .list_line{
+        width: 50%;
+        margin-left: 0;
+    }
+
+    .My_button_div {
+        width: 47%;
+    }
+}
+
+/*425px*/
+
+@media screen and (max-width: 426px) {
+    .list_line{
+        width: 40%;
+        margin-left: 0;
+    }
+}
+
+/*iphone6 plus 竖屏*/
+
+@media screen and (max-width: 415px){
+    .list_line{
+        width: 40%;
+    }
+
+    .My_button_div{
+        width: 65%;
+    }
+
+    .Featured .number{
+        line-height: 0.5rem;
+    }
+
+    .Product_p{
+        font-size: 0.18rem;
+    }
+}
+
+/*iphone6 竖屏*/
+@media screen and (max-width: 376px){
+    .list_line{
+        width: 30%;
+        margin-left: 0;
+    }
+    .Product_list{
+        margin-top: 0.5rem;
+    }
+
+    .My_button_div {
+        width: 72%;
+    }
+
+    .Featured_header{
+        font-size: 0.16rem;
+    }
+
+    .Featured .number{
+        /*float: none;*/
+        display: block;
+        line-height: 0.4rem;
+    }
+
+    .Product_p{
+        font-size: 0.22rem;
+    }
+}
+
+
+/*iphone5 竖屏*/
+@media screen and (max-width: 321px) {
+    .list_line{
+        width: 20%;
+        margin-left: 0;
+    }
+    .My_button_div {
+        width: 83%;
+    }
+
+    .Featured_header{
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+    }
+
+    .Product_header {
+        font-size: 0.16rem;
+    }
+    .recommend .number {
+        line-height: 1.05rem;
+        font-size: 0.15rem;
+    }
+
+    .Featured .number{
+        float: none;
+        display: block;
+    }
+}

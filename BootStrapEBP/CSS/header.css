@@ -1,0 +1,70 @@
+.nav_font{
+    font-family: "Aleo Regular", "Myriad Pro","KaiTi";
+}
+
+.nav_background{
+    background-color: white;
+}
+
+.navbar-brand img{
+    width: 45%;
+    margin: 0 auto;
+}
+
+.My_navbar-brand{
+    padding: 0 0;
+}
+
+
+
+
+.nav.navbar-nav li{
+    margin-right: 0.2rem;
+    font-weight: bold;
+}
+
+.search{
+    margin-top: 0.55rem;
+}
+
+.search input{
+    width: 90%;
+    display: inline-block;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar-brand img{
+        margin: 0 0.1rem;
+    }
+}
+
+@media (min-width: 768px){
+    .navbar-nav {
+        margin-right: 0.1rem;
+    }
+}
+
+@media (min-width: 769px){
+    .navbar-nav {
+        margin-right: 0.7rem;
+    }
+}
+
+@media (max-width: 668px) {
+    .search input{
+        width: 80%;
+
+    }
+}
+
+@media screen and (max-width: 321px){
+    .My_navbar-brand{
+        width: 75%;
+    }
+    .search input{
+        width: 79%;
+
+    }
+
+}
