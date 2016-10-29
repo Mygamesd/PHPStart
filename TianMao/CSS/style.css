@@ -1,0 +1,554 @@
+body{
+    background-color: gainsboro;
+}
+
+
+/*header---------------------------------------------------------------------------*/
+.fix_head{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: white;
+    height: 0.5rem;
+    top: 0;
+}
+
+
+.logo_img{
+    width: 100%;
+    margin-top: 0.1rem;
+}
+
+.search{
+
+}
+
+.LogIN{
+    font-size: 0.13rem;
+}
+
+.banner{
+    margin-top: 0.5rem;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+
+
+/*导航栏--------------------------------------------------------------------------*/
+/*main---------------------------------------------------------------------------*/
+.TM_nav{
+    /*margin-top: 0.1rem;*/
+    background-color: white;
+}
+
+.TM_nav ul{
+    margin-top: 0.1rem;
+}
+
+.nav_icon{
+    text-align: center;
+}
+
+.nav_icon img{
+    width: 100%;
+}
+
+.nav_icon .icon_name{
+    color: #000;
+    display: block;
+}
+
+
+/*推荐-----------------------------------------------------------------------*/
+.recommend{
+    margin-top: 0.1rem;
+}
+
+.recommend .recommend_li{
+    width: 50%;
+    /*margin-right: 0.1rem !important;*/
+}
+
+.recommend_li img{
+    width: 100%;
+    height: 1.5rem;
+}
+
+
+/*必抢--------------------------------------------------------------------*/
+.grab_li{
+    background-color: white;
+    border-left: 0.01rem solid gainsboro;
+    border-bottom: 0.01rem solid gainsboro;
+    text-align: center;
+}
+
+/*.grab li:last-child{*/
+    /*border-bottom: 0;*/
+    /*border-right: 0.01rem solid gainsboro;*/
+/*}*/
+
+.grab_li .grab_name{
+    display: block;
+    font-size: 0.14rem;
+    padding: 0.1rem 0;
+    color: #000;
+}
+
+.grab_li img{
+    width: 100%;
+}
+
+.grab_li .grab_price{
+    display: block;
+    font-size: 0.12rem;
+    padding: 0.1rem 0;
+    color: #f00;
+}
+
+
+/*品牌特卖------------------------------------------------------------------*/
+.Brand_sale_li{
+    background-color: #fff;
+    border-left: 0.01rem solid gainsboro;
+}
+
+.Brand_sale_li img{
+    width: 100%;
+}
+
+/*品牌资讯------------------------------------------------------------*/
+.Brand_info_li{
+    background-color: white;
+    text-align: center;
+    border-left: 0.01rem solid gainsboro;
+    padding-bottom: 0.2rem;
+}
+
+.Brand_info_li img{
+    width: 100%;
+}
+
+/*模块的名字样式---------------------------------------------------------*/
+.title_name{
+    text-align: center;
+}
+
+.title_name p{
+    display: inline-block;
+    font-size: 0.14rem;
+    margin: 0 0.1rem;
+}
+
+.title_name span{
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.01rem;
+    vertical-align: middle;
+}
+
+.title_purple span{
+    background: -webkit-linear-gradient(left, purple,purple); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, purple,purple); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, purple,purple); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, purple,purple); /* 标准的语法 */
+}
+
+.title_blue span{
+    background: -webkit-linear-gradient(left, #2aabd2,#2aabd2); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #2aabd2,#2aabd2); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #2aabd2,#2aabd2); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #2aabd2,#2aabd2); /* 标准的语法 */
+}
+
+.title_deepBlue span{
+    background: -webkit-linear-gradient(left, #3278b3,#3278b3); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #3278b3,#3278b3); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #3278b3,#3278b3); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #3278b3,#3278b3); /* 标准的语法 */
+}
+
+.title_pink span{
+    background: -webkit-linear-gradient(left, deeppink,deeppink); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, deeppink,deeppink); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, deeppink,deeppink); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, deeppink,deeppink); /* 标准的语法 */
+}
+.title_green span{
+    background: -webkit-linear-gradient(left, #4cae4c,#4cae4c); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #4cae4c,#4cae4c); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #4cae4c,#4cae4c); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #4cae4c,#4cae4c); /* 标准的语法 */
+}
+.title_deepGreen span{
+    background: -webkit-linear-gradient(left, forestgreen,forestgreen); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, forestgreen,forestgreen); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, forestgreen,forestgreen); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, forestgreen,forestgreen); /* 标准的语法 */
+}
+.title_orange span{
+    background: -webkit-linear-gradient(left, orange,orange); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, orange,orange); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, orange,orange); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, orange,orange); /* 标准的语法 */
+}
+.title_red span{
+    background: -webkit-linear-gradient(left, red,red); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, red,red); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, red,red); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, red,red); /* 标准的语法 */
+}
+
+
+
+/*name的一个工程样式-----------------------------------------------------*/
+.name p:first-child{
+    font-weight: 700;
+    color: #000;
+    font-size: 0.14rem;
+    padding-top: 0.1rem;
+}
+
+.name p:last-child{
+    font-weight: 700;
+    font-size: 0.12rem;
+}
+
+.Name_green{
+    color: #4cae4c;
+}
+
+.Name_purple{
+    color: purple;
+}
+
+.Name_pink{
+    color: deeppink;
+}
+
+.Name_Blue{
+    color: #2aabd2;
+}
+
+.Name_gray{
+    color: gray;
+}
+
+.Name_deepBlue{
+    color: #3278b3;
+}
+
+.Name_deepGreen{
+    color: forestgreen;
+}
+
+.Name_orange{
+    color: orange;
+}
+
+.Name_red{
+    color: red;
+}
+
+
+/*便捷生活---------------------------------------------------------------*/
+.healthy_lifestyle_bg{
+    background-color: white;
+}
+
+.healthy_name{
+    text-align: center;
+}
+
+.healthy_div{
+    border-left: 0.01rem solid gainsboro;
+    border-bottom: 0.01rem solid gainsboro;
+}
+
+
+.healthy_lifestyle img{
+    width: 100%;
+}
+
+/*精选市场-------------------------------------------------------------------------*/
+.markets_li{
+    background-color: white;
+    text-align: center;
+    border-left: 0.01rem solid gainsboro;
+    border-bottom: 0.01rem solid gainsboro;
+}
+
+.markets_li img{
+    width: 100%;
+}
+
+.markets_bottom{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*爱生活--------------------------------------------------------------*/
+.life_li{
+    background-color: white;
+    text-align: center;
+    border-left: 0.01rem solid gainsboro;
+    border-bottom: 0.01rem solid gainsboro;
+}
+
+.life_li img{
+    width: 100%;
+}
+
+/*潮流酷玩-------------------------------------------------------------------*/
+.trend_li{
+    background-color: white;
+    text-align: center;
+    border-left: 0.01rem solid gainsboro;
+    border-bottom: 0.01rem solid gainsboro;
+}
+
+.trend_li img{
+    width: 100%;
+}
+
+
+/*热门行业--------------------------------------------------------------------*/
+
+.hot_li{
+    background-color: white;
+    text-align: center;
+    border-left: 0.01rem solid gainsboro;
+    border-bottom: 0.01rem solid gainsboro;
+}
+
+.hot_li img{
+    width: 100%;
+}
+
+/*footer-------------------------------------------------------------------------*/
+
+footer{
+    /*text-align: center;*/
+    background-color: whitesmoke;
+    border-top: 0.04rem solid #000;
+    margin-top: 0.2rem;
+}
+
+.My_footer{
+    /*width: 80%;*/
+    text-align: center;
+    width: 100%;
+    margin-top: 0.1rem;
+}
+
+.footer_li{
+    display:inline-block;
+    text-align: center;
+
+}
+
+.footer_li a{
+    display: inline-block;
+    padding: 0.05rem 0.1rem;
+    font-size: 0.12rem;
+    color: gray;
+}
+
+.footer_li span{
+    font-size: 0.12rem;
+    color: gray;
+}
+
+.footer_p{
+    text-align: center;
+    font-size: 0.12rem;
+    color: gainsboro;
+    margin-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+
+
+/*自适应媒体查询-------------------------------------------------------------------------------------------------*/
+ /*ipad横屏*/
+@media screen and (max-width: 1025px){
+    .logo_img {
+        width: 80%;
+        margin-top: 0.02rem;
+    }
+    .nav_icon img{
+        width: 70%;
+    }
+
+    .nav_icon .icon_name{
+        font-size: 0.2rem;
+    }
+    .healthy_lifestyle img{
+        width: 80%;
+    }
+
+    .name p:first-child{
+        font-size: 0.3rem;
+        padding-top: 0.3rem;
+    }
+
+    .name p:last-child{
+        font-size: 0.25rem;
+    }
+}
+
+ /*ipad竖屏*/
+@media screen and (max-width: 769px) {
+    .logo_img{
+        margin-top: 0.04rem;
+    }
+    .nav_icon img{
+        width: 70%;
+    }
+    .nav_icon .icon_name{
+        font-size: 0.18rem;
+    }
+}
+
+/*6plus横屏*/
+@media screen and (max-width: 737px){
+    .logo_img{
+        margin-top: 0;
+        width: 76%;
+        margin-left: 0.2rem;
+    }
+
+    .nav_icon img{
+        width: 70%;
+    }
+
+    .nav_icon .icon_name{
+        font-size: 0.18rem;
+    }
+
+    .name p:first-child{
+        font-size: 0.2rem;
+        padding-top: 0.1rem;
+    }
+
+    .name p:last-child{
+        font-size: 0.16rem;
+    }
+
+    .healthy_lifestyle img{
+        width: 80%;
+    }
+
+}
+
+ /*6横屏*/
+@media screen and (max-width: 668px){
+    .logo_img{
+        width: 80%;
+        margin-top: 0;
+    }
+    .nav_icon img {
+        width: 80%;
+    }
+}
+
+
+
+@media screen and (max-width: 569px){
+    .logo_img{
+        margin-top: 0;
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .name p:first-child{
+        font-size: 0.16rem;
+        padding-top: 0.1rem;
+    }
+
+    .name p:last-child{
+        font-size: 0.14rem;
+    }
+
+    .healthy_lifestyle img{
+        width: 80%;
+    }
+}
+
+ /*6push 竖屏*/
+@media screen and (max-width: 415px){
+   .logo_img{
+       width: 100%;
+       margin-top: 0.08rem;
+       margin-left: 0;
+   }
+
+    .nav_icon img{
+        width: 100%;
+    }
+
+    .nav_icon .icon_name{
+        font-size: 0.14rem;
+    }
+
+    .name p:first-child{
+        font-size: 0.14rem;
+        padding-top: 0.1rem;
+    }
+
+    .name p:last-child{
+        font-size: 0.12rem;
+    }
+
+    .healthy_lifestyle img{
+        width: 100%;
+    }
+
+    .healthy_lifestyle .healthy_left{
+        width: 90%;
+    }
+}
+
+ /*6竖屏*/
+@media screen and (max-width: 376px){
+    .logo_img{
+          width: 100%;
+          margin-top: 0.1rem;
+      }
+
+    .healthy_lifestyle .healthy_left {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .logo_img{
+        width: 130%;
+    }
+    .nav_icon img {
+        width: 130%;
+    }
+
+    .nav_icon .icon_name {
+        font-size: 0.12rem;
+        padding-left: 0.03rem;
+    }
+
+    .TM_nav .col-xs-2{
+        padding-right: 16px;
+        padding-left: 10px;
+    }
+
+    .grab_li .grab_name {
+        font-size: 0.12rem;
+    }
+
+    .healthy_lifestyle .healthy_left {
+        width: 78%;
+    }
+}
+
+

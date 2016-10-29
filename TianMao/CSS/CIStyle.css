@@ -1,0 +1,152 @@
+
+.zhezhao{
+    background-color: Gray;
+    left: 0;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    filter: alpha(opacity=50); /* IE6 */
+    -moz-opacity: 0.5; /* Mozilla */
+    -khtml-opacity: 0.5; /* Safari */
+    /*background-color: #ffffff;*/
+    width:100%;
+    height:100%;
+    display: none;
+}
+
+.Classification{
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width:100%;
+    /*!*height:100%;*/
+    /*height: 2rem; !*给定一个高度，才能出现滚动*!*/
+    overflow: hidden;
+    display: none;
+    /*overflow-y: auto;*/
+}
+
+/*左侧栏-----------------------------------------------------------------------*/
+.Classification_left{
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #ffffff;
+    overflow-y: auto;
+}
+
+.Classification_title{
+    background-color: #eeeeee;
+    padding: 0.1rem 0;
+}
+
+/*选类列------------------------------------------------------------------------*/
+.CI_tab{
+    padding-left: 0;
+    height: 4rem;
+    overflow-y: auto;
+}
+
+.CI_tab_li{
+    text-align: center;
+    color: #9b9b9b;
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+    background-color: #eeeeee;
+    font-size: 0.14rem;
+}
+
+.CI_active{
+    background-color: #ffffff;
+}
+
+/*右侧按钮------------------------------------------------------------------*/
+.Classification_click{
+
+    height: 100%;
+}
+
+
+/*阻止跟随遮罩层滑动------------------------------------------------------------*/
+.ovrHidden{
+    /*position: fixed;*/
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.ui-loader h1{
+    display: none;
+}
+
+
+/*CI_cont-------------------------------------------------------------*/
+
+.CI_cont{
+    height: 4rem;
+    overflow-y: auto;
+    padding-left: 0;
+}
+
+.CI_cont div:not(:first-child){
+    display: none;
+}
+
+.CI_cont p{
+    font-size: 0.14rem;
+    margin-top: 0.2rem;
+}
+
+.CI_cont_ul{
+    margin-top: 0.1rem;
+}
+
+.CI_count_li{
+    text-align: center;
+}
+
+.CI_count_li a{
+    color: black;
+}
+
+.CI_count_li img{
+    width: 90%;
+}
+
+.CI_count_li span{
+    font-size: 0.14rem;
+    display: block;
+}
+
+.CI_button{
+    width: 100%;
+    margin: 0.1rem auto;
+    padding: 0.05rem 0.1rem;
+    background-color: red;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 0.14rem;
+}
+
+.Classification_active{
+
+}
+
+.CI_count_li .br_img{
+    width: 100%;
+    margin: 0.15rem 0;
+}
+
+
+/*媒体查询适配-------------------------------------------------------------------------------------------------*/
+
+
+/*iphone5 竖屏--------------------------*/
+@media screen and (max-width: 321px){
+    .Classification_click{
+        font-size: 0.14rem;
+        padding-left: 0;
+    }
+}
