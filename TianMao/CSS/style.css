@@ -67,6 +67,10 @@ body{
     margin-top: 0.1rem;
 }
 
+.recommend a{
+    display: inline-block;
+}
+
 .recommend .recommend_li{
     width: 50%;
     /*margin-right: 0.1rem !important;*/

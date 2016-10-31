@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iPhone</title>
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE/edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
+
+    <!-- Bootstrap -->
+    <link href="dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="dist/css/swiper.min.css" type="text/css" rel="stylesheet">
+
+    <link href="CSS/reset.css" type="text/css" rel="stylesheet">
+    <link href="CSS/public.css" type="text/css" rel="stylesheet">
+    <link href="CSS/iPhone.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<header class="public_header container">
+    <ul id="public_ul" class="public_ul row">
+        <li class="public_li col-xs-3 col-sm-3 active">基本信息<span></span></li>
+        <li class="public_li col-xs-3 col-sm-3">商品详情<span></span></li>
+        <li class="public_li col-xs-3 col-sm-3">参数<span></span></li>
+        <li class="public_li col-xs-3 col-sm-3">评价</li>
+    </ul>
+</header>
+<div class="swiper-container wrap_main">
+    <div class="swiper-wrapper wrap_block clearfix">
+        <div class="wrap swiper-slide swiper-no-swiping">
+            <div>
+                <div class="product_details swiper-container">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><img src="imges/Html/iPhone_nav1.jpg" /></li>
+                        <li class="swiper-slide"><img src="imges/Html/iPhone_nav2.jpg" /></li>
+                        <li class="swiper-slide"><img src="imges/Html/iPhone_nav3.jpg" /></li>
+                        <li class="swiper-slide"><img src="imges/Html/iPhone_nav4.jpg" /></li>
+                    </ul>
+                </div>
+            </div>
+            <!--<a href="index.html">ccccc</a>-->
+        </div>
+        <div class="wrap swiper-slide swiper-no-swiping">2</div>
+        <div class="wrap swiper-slide swiper-no-swiping">3</div>
+        <div class="wrap swiper-slide swiper-no-swiping">4</div>
+    </div>
+
+
+</div>
+<footer class="public_footer"></footer>
+
+<script src="JS/jquery-2.2.4.min.js"></script>
+<script src="JS/jquery.mobile-1.4.5.min.js"></script>
+<script src="dist/js/swiper.min.js"></script>
+<script src="JS/public.js"></script>
+<script type="text/javascript">
+   $(document).ready(function () {
+       $('#public_ul').jqList("li");
+       var product_details = new Swiper('.product_details',{nested:true,noSwiping : false});
+   })
+</script>
+</body>
+</html>

@@ -7,6 +7,9 @@ input,select,textarea{outline:none;border:none;background:none;}
 textarea{resize:none;}
 a{text-decoration:none;}
 a:link,a:visited,a:hover,a:active{text-decoration: none;}
+.ui-loader h1{
+    display: none;
+}
 
 /*清浮动*/
 .clearfix:after{content:"";*display:block;*clear:both;}
